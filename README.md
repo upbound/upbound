@@ -15,3 +15,4 @@ Do not file issues for Crossplane providers or general Crossplane on this reposi
 * Upbound SaaS (Cloud Spaces)
 * Upbound Marketplace
 * up CLI
+* Upbound documentation
