@@ -1,7 +1,7 @@
 name: Feature Request
-description: New features and enhancement ideas for the Upbound product.
+description: New feature or enhancement ideas for the Upbound product.
 labels: enhancement
-title: "<component name>: <feature overview>"
+title: "<feature overview>"
 body:
   - type: dropdown
     id: product-area

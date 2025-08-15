@@ -1,8 +1,22 @@
 name: Bug Report
-description: Identify bugs in of our Upbound's products.
+description: Identified a bug in one Upbound's products?
 labels: bug,needs:triage
-title: "<component name>: <bug overview>"
+title: "<bug overview>"
 body:
+  - type: dropdown
+    id: product-area
+    attributes:
+      label: Product Area
+      description: What Product Area is this request for?
+      options:
+        - Upbound Crossplane (UXP)
+        - up (CLI)
+        - Upbound SaaS
+        - Upbound Marketplace
+        - Documentation
+        - Functions
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
