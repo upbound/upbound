@@ -1,6 +1,6 @@
 policy:
   - section:
-      - id: [product]
+      - id: [product-area]
         block-list: ['None', 'Other']
         label:
           - name: 'kind: cli'

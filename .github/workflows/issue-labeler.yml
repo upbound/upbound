@@ -27,14 +27,10 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/bug_report.md
 
-      - name: Set labels based on severity field
+      - name: Set labels based on product-area field
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
-          section: severity
-          block-list: |
-            None
-            Other
           token: ${{ secrets.GITHUB_TOKEN }}
 
   labels-for-features:
@@ -57,7 +53,7 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/feature_request.md
 
-      - name: Set labels based on severity field
+      - name: Set labels based on product-area field
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
