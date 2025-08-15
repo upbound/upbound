@@ -8,13 +8,14 @@ body:
     attributes:
       label: Product Area
       description: What Product Area is this request for?
+      multiple: false
       options:
-        - Upbound Crossplane (UXP)
-        - up (CLI)
-        - Upbound SaaS
-        - Upbound Marketplace
-        - Documentation
-        - Functions
+        - 'Upbound Crossplane (UXP)'
+        - 'up (CLI)'
+        - 'Upbound SaaS'
+        - 'Upbound Marketplace'
+        - 'Documentation'
+        - 'Functions'
     validations:
       required: true
   - type: textarea
