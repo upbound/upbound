@@ -1,0 +1,44 @@
+name: Bug Report
+description: Identify bugs in of our Upbound's products.
+labels: bug,needs:triage
+title: "<component name>: <bug overview>"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      placeholder: What happened and what did you expect should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      placeholder: Add the steps needed to reproduce the state you observed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Relevant Error Output Snippet
+      description: |
+        If possible, provide a relevant log from the error or panic output.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      value: |
+          - Cloud provider or hardware configuration: 
+          - Kubernetes version (use `kubectl version`): 
+          - Kubernetes distribution (e.g. Tectonic, GKE, OpenShift): 
+          - OS (e.g. from `/etc/os-release`): 
+          - Kernel (e.g. `uname -a`): 
+      render: markdown
+    validations:
+      required: false    
