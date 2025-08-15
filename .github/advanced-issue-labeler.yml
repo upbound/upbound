@@ -1,0 +1,17 @@
+policy:
+  - section:
+      - id: [product-area]
+        block-list: ['None', 'Other']
+        label:
+          - name: 'kind: cli'
+            keys: ['up (CLI)']
+          - name: 'kind: uxp'
+            keys: ['Upbound Crossplane (UXP)']
+          - name: 'kind: saas'
+            keys: ['Upbound SaaS']
+          - name: 'kind: marketplace'
+            keys: ['Upbound Marketplace']
+          - name: 'kind: docs'
+            keys: ['Documentation']
+          - name: 'kind: functions'
+            keys: ['Functions']
