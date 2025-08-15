@@ -11,8 +11,9 @@ Support through issues on this repository is provided on a **best-effort basis**
 Do not file issues for Crossplane providers or general Crossplane on this repository unless it is related to that feature/service and functionality with Upbound. 
 
 ## Areas covered by this repo
-
-* Upbound SaaS (Cloud Spaces)
-* Upbound Marketplace
-* up CLI
-* Upbound documentation
+* [Upbound Crossplane (UXP)](https://docs.upbound.io/getstarted/)
+* [Upbound SaaS](https://console.upbound.io)
+* [Upbound Marketplace](https://marketplace.upbound.io)
+* [up CLI](https://docs.upbound.io/getstarted/)
+* [Upbound documentation](https://docs.upbound.io)
+* Upbound Functions
