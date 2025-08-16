@@ -25,7 +25,7 @@ jobs:
         uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
         with:
-          template-path: .github/ISSUE_TEMPLATE/bug_report.md
+          template-path: .github/ISSUE_TEMPLATE/bug_report.yml
 
       - name: Set labels based on product-area field
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
@@ -51,7 +51,7 @@ jobs:
         uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
         with:
-          template-path: .github/ISSUE_TEMPLATE/feature_request.md
+          template-path: .github/ISSUE_TEMPLATE/feature_request.yml
 
       - name: Set labels based on product-area field
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
