@@ -1,4 +1,4 @@
-name: Add "needs-triage" label to new or reopened issues
+name: Add needs-triage
 on:
   issues:
     types: [opened, reopened]
@@ -6,6 +6,7 @@ jobs:
   add-labels:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Add labels to new issue
         run: |
           gh issue edit ${{ github.event.issue.number }} --add-label "needs-triage"
